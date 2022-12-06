@@ -159,7 +159,7 @@ i_status flash_write(uint32_t address, uint8_t* data_array, uint32_t data_array_
 
 	HAL_FLASH_Unlock();
 
-#if defined(STM32H745xx)
+#if defined(STM32H745xx) || defined(STM32H743xx)
 	uint32_t _data_array_sz = data_array_sz/(8*4);
 	for(uint32_t i = 0; i< _data_array_sz; i++)
 	{

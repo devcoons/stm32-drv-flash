@@ -62,6 +62,11 @@
 	#include "stm32h7xx_hal_flash.h"
 	#define FLASH_ADDR_START 	((uint32_t)0x08000000)
 	#define FLASH_ADDR_END 		((uint32_t)0x08300000)
+#elif defined(STM32H743xx)
+	#include "stm32h7xx_hal.h"
+	#include "stm32h7xx_hal_flash.h"
+	#define FLASH_ADDR_START 	((uint32_t)0x08000000)
+	#define FLASH_ADDR_END 		((uint32_t)0x08300000)
 #else
 #endif
 
